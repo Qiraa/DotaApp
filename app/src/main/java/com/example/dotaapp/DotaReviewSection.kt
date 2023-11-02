@@ -34,10 +34,9 @@ fun DotaReviewSection(
         Spacer(modifier = Modifier.size(32.dp))
         CommentBlock(
             userAvatarPainter = painterResource(id = R.drawable.user1),
-            name = "Auguste Conte",
-            date = "February 14, 2019",
-            comment = "“Once you start to learn its secrets, there’s a wild and " +
-                    "exciting variety of play here that’s unmatched, even by its peers.”"
+            name = stringResource(R.string.comment1_username),
+            date = stringResource(R.string.comment1_date),
+            comment = stringResource(R.string.comment1_text)
         )
         Divider(
             color = Mirage,
@@ -45,10 +44,9 @@ fun DotaReviewSection(
         )
         CommentBlock(
             userAvatarPainter = painterResource(id = R.drawable.user2),
-            name = "Jang Marcelino",
-            date = "February 14, 2019",
-            comment = "“Once you start to learn its secrets, there’s a wild and " +
-                    "exciting variety of play here that’s unmatched, even by its peers.”"
+            name = stringResource(R.string.comment2_username),
+            date = stringResource(R.string.comment2_date),
+            comment = stringResource(R.string.comment2_text)
         )
     }
 }
