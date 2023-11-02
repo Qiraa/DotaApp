@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DotaApp</string>
+    <string name="banner_content_description">Banner with Dota picture</string>
+    <string name="dota_description">Dota 2 is a multiplayer online battle arena (MOBA) game which has two teams of five players compete to collectively destroy a large structure defended by the opposing team known as the "Ancient", whilst defending their own.</string>
+    <string name="install_game">Install</string>
+    <string name="dota_icon_content_description">Dota icon</string>
+    <string name="review_ratings">Review &amp; Ratings</string>
+    <string name="dota_title">DoTA2</string>
+    <string name="dota_installs_count">70M</string>
+    <string name="tag_moba">MOBA</string>
+    <string name="tag_strategy">STRATEGY</string>
+    <string name="tag_multiplayer">MULTIPLAYER</string>
+    <string name="reviews_count">70M Reviews</string>
+    <string name="play_content_description">Play</string>
+</resources>
