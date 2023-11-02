@@ -1,3 +1,7 @@
 # DotaApp
-Training app for mobile development course. This app has only one screen with two sections. The first secection is about banner, icon, rating and description of game. The second consists of users' comments.   
+Training app for mobile development course. 
+This app has only one screen with two sections. The first secection is about banner, icon, rating and description of game. The second consists of users' comments.   
 This app doesn't have any functionality, just UI.
+
+# Screenshots
+<img src="./screenshots/Sc1.png" width="400" alt="screenshot 1"/><img src="./screenshots/Sc2.png" width="400" alt="screenshot 2"/>
