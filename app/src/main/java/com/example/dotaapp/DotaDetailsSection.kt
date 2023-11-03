@@ -2,6 +2,7 @@ package com.example.dotaapp
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -89,8 +90,11 @@ private fun DotaHeader(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun DotaDescription() {
-    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+private fun DotaDescription(modifier: Modifier = Modifier) {
+    Row(
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = modifier.horizontalScroll(rememberScrollState())
+    ) {
         DescriptionTag(stringResource(id = R.string.tag_moba))
         DescriptionTag(stringResource(id = R.string.tag_multiplayer))
         DescriptionTag(stringResource(id = R.string.tag_strategy))
