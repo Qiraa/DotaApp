@@ -2,7 +2,6 @@ package com.example.dotaapp
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -18,19 +17,18 @@ import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.SuggestionChip
 import androidx.compose.material3.SuggestionChipDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
@@ -38,12 +36,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.dotaapp.ui.theme.ButterflyBlue
 import com.example.dotaapp.ui.theme.Dark
 import com.example.dotaapp.ui.theme.OuterSpace
 import com.example.dotaapp.ui.theme.PaleBlue
-import com.example.dotaapp.ui.theme.StarImage
 
 @Composable
 fun DotaDetailsSection(
@@ -70,9 +66,7 @@ private fun DotaHeader(modifier: Modifier = Modifier) {
             Text(
                 text = stringResource(R.string.dota_title),
                 color = Color.White,
-                fontSize = 24.sp,
-                lineHeight = 32.sp,
-                letterSpacing = 0.5.sp,
+                style = MaterialTheme.typography.titleLarge
             )
             Row {
                 RatingRow()
@@ -80,8 +74,7 @@ private fun DotaHeader(modifier: Modifier = Modifier) {
                 Text(
                     text = stringResource(R.string.dota_installs_count),
                     color = OuterSpace,
-                    fontSize = 12.sp,
-                    letterSpacing = 0.5.sp,
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
             Spacer(modifier = Modifier.size(12.dp))
@@ -105,8 +98,8 @@ private fun DotaDescription(modifier: Modifier = Modifier) {
     Text(
         text = stringResource(id = R.string.dota_description),
         color = PaleBlue,
-        fontSize = 12.sp,
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxWidth(),
+        style = MaterialTheme.typography.bodyMedium,
     )
 }
 
@@ -176,9 +169,10 @@ private fun VideoCard(painter: Painter) {
     ) {
         Image(
             painter = painter,
-            contentDescription = null,
+            contentDescription = stringResource(R.string.gameplay_video),
             contentScale = ContentScale.FillBounds,
             modifier = Modifier
+                .clip(RoundedCornerShape(16.dp))
                 .height(136.dp)
                 .width(240.dp)
         )

@@ -22,6 +22,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -92,24 +93,6 @@ fun MainScreen() {
     }
 }
 
-@Composable
-private fun InstallButton(
-    modifier: Modifier = Modifier,
-) {
-    Button(
-        onClick = { /*TODO*/ },
-        colors = ButtonDefaults.buttonColors(PapayaWhip, BlueCharcoal),
-        shape = RoundedCornerShape(12.dp),
-        contentPadding = PaddingValues(vertical = 16.dp),
-        modifier = modifier,
-    ) {
-        Text(
-            text = stringResource(id = R.string.install_game),
-            fontSize = 20.sp,
-            letterSpacing = 0.6.sp,
-        )
-    }
-}
 
 @Preview
 @Composable

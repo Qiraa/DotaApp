@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Divider
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -18,11 +19,9 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.dotaapp.ui.theme.LavenderBlush
 import com.example.dotaapp.ui.theme.MettalicSilver
 import com.example.dotaapp.ui.theme.Mirage
-import com.example.dotaapp.ui.theme.StarImage
 import com.example.dotaapp.ui.theme.White66
 
 @Composable
@@ -51,21 +50,21 @@ fun DotaReviewSection(
     }
 }
 
+
 @Composable
 private fun ReviewsHeader(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(
             text = stringResource(id = R.string.review_ratings),
-            fontSize = 16.sp,
             color = LavenderBlush,
-            letterSpacing = 0.6.sp,
+            style = MaterialTheme.typography.titleMedium
         )
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
                 text = 4.9.toString(),
                 color = Color.White,
-                fontSize = 48.sp
+                style = MaterialTheme.typography.headlineLarge
             )
             Spacer(modifier = Modifier.size(16.dp))
             Column {
@@ -78,8 +77,7 @@ private fun ReviewsHeader(modifier: Modifier = Modifier) {
                 Text(
                     text = stringResource(R.string.reviews_count),
                     color = MettalicSilver,
-                    fontSize = 12.sp,
-                    letterSpacing = 0.5.sp
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
         }
@@ -106,14 +104,12 @@ private fun CommentBlock(
                 Text(
                     text = name,
                     color = Color.White,
-                    fontSize = 16.sp,
-                    letterSpacing = 0.5.sp
+                    style = MaterialTheme.typography.bodyLarge
                 )
                 Text(
                     text = date,
                     color = White66,
-                    fontSize = 12.sp,
-                    letterSpacing = 0.5.sp
+                    style = MaterialTheme.typography.bodySmall
                 )
             }
         }
@@ -121,9 +117,9 @@ private fun CommentBlock(
         Text(
             text = comment,
             color = MettalicSilver,
-            fontSize = 12.sp,
-            letterSpacing = 0.5.sp,
-            lineHeight = 16.sp
+            style = MaterialTheme.typography.bodyMedium
+
+
         )
     }
 }
