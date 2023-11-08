@@ -38,7 +38,7 @@ fun DotaReviewSection(
             comment = stringResource(R.string.comment1_text)
         )
         Divider(
-            color = Mirage,
+            color = MaterialTheme.colorScheme.tertiary,
             modifier = Modifier.padding(horizontal = 16.dp, vertical = 32.dp)
         )
         CommentBlock(
@@ -56,14 +56,14 @@ private fun ReviewsHeader(modifier: Modifier = Modifier) {
     Column(modifier = modifier) {
         Text(
             text = stringResource(id = R.string.review_ratings),
-            color = LavenderBlush,
+            color = MaterialTheme.colorScheme.onBackground,
             style = MaterialTheme.typography.titleMedium
         )
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             Text(
                 text = 4.9.toString(),
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onBackground,
                 style = MaterialTheme.typography.headlineLarge
             )
             Spacer(modifier = Modifier.size(16.dp))
@@ -76,7 +76,7 @@ private fun ReviewsHeader(modifier: Modifier = Modifier) {
                 }
                 Text(
                     text = stringResource(R.string.reviews_count),
-                    color = MettalicSilver,
+                    color = MaterialTheme.colorScheme.onSurface,
                     style = MaterialTheme.typography.bodyMedium
                 )
             }
@@ -103,12 +103,12 @@ private fun CommentBlock(
             Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 Text(
                     text = name,
-                    color = Color.White,
+                    color = MaterialTheme.colorScheme.onBackground,
                     style = MaterialTheme.typography.bodyLarge
                 )
                 Text(
                     text = date,
-                    color = White66,
+                    color = MaterialTheme.colorScheme.onSurface,
                     style = MaterialTheme.typography.bodySmall
                 )
             }
@@ -116,7 +116,7 @@ private fun CommentBlock(
         Spacer(modifier = Modifier.size(16.dp))
         Text(
             text = comment,
-            color = MettalicSilver,
+            color = MaterialTheme.colorScheme.onSurface,
             style = MaterialTheme.typography.bodyMedium
 
 

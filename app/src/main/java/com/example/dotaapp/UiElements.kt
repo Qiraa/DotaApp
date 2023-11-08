@@ -21,7 +21,10 @@ fun InstallButton(
 ) {
     Button(
         onClick = { /*TODO*/ },
-        colors = ButtonDefaults.buttonColors(PapayaWhip, BlueCharcoal),
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.primary,
+            contentColor = MaterialTheme.colorScheme.onPrimary
+        ),
         shape = RoundedCornerShape(12.dp),
         contentPadding = PaddingValues(vertical = 16.dp),
         modifier = modifier,

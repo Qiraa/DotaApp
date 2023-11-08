@@ -38,6 +38,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.dotaapp.ui.theme.ButterflyBlue
 import com.example.dotaapp.ui.theme.Dark
+import com.example.dotaapp.ui.theme.MettalicSilver
 import com.example.dotaapp.ui.theme.OuterSpace
 import com.example.dotaapp.ui.theme.PaleBlue
 
@@ -65,7 +66,7 @@ private fun DotaHeader(modifier: Modifier = Modifier) {
         Column {
             Text(
                 text = stringResource(R.string.dota_title),
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onBackground,
                 style = MaterialTheme.typography.titleLarge
             )
             Row {
@@ -73,7 +74,7 @@ private fun DotaHeader(modifier: Modifier = Modifier) {
                 Spacer(modifier = Modifier.size(4.dp))
                 Text(
                     text = stringResource(R.string.dota_installs_count),
-                    color = OuterSpace,
+                    color = MaterialTheme.colorScheme.onSurface,
                     style = MaterialTheme.typography.bodyMedium
                 )
             }
@@ -97,7 +98,7 @@ private fun DotaDescription(modifier: Modifier = Modifier) {
 
     Text(
         text = stringResource(id = R.string.dota_description),
-        color = PaleBlue,
+        color = MaterialTheme.colorScheme.onSurface,
         modifier = Modifier.fillMaxWidth(),
         style = MaterialTheme.typography.bodyMedium,
     )
@@ -117,7 +118,7 @@ private fun Videos(modifier: Modifier = Modifier) {
 @Composable
 private fun LogoImage(modifier: Modifier = Modifier) {
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color.Black),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         border = BorderStroke(1.dp, Dark),
         modifier = modifier
     ) {
@@ -150,13 +151,13 @@ private fun DescriptionTag(text: String) {
         onClick = { },
         shape = RoundedCornerShape(100.dp),
         colors = SuggestionChipDefaults.suggestionChipColors(
-            containerColor = ButterflyBlue.copy(alpha = 0.24f)
+            containerColor = MaterialTheme.colorScheme.secondary
         ),
         border = null,
         label = {
             Text(
                 text = text,
-                color = ButterflyBlue
+                color = MaterialTheme.colorScheme.onSecondary
             )
         }
     )
