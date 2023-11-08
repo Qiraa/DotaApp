@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="video_height">136dp</dimen>
+    <dimen name="video_width">240dp</dimen>
+    <dimen name="video_shape">16dp</dimen>
+    <dimen name="chips_shape">100dp</dimen>
+    <dimen name="star_size">12dp</dimen>
+    <dimen name="dota_icon_size">64dp</dimen>
+    <dimen name="border_size">1dp</dimen>
+    <dimen name="logo_offset">-64dp</dimen>
+    <dimen name="user_avatar_size">36dp</dimen>
+    <dimen name="xxs_padding">4dp</dimen>
+    <dimen name="xs_padding">8dp</dimen>
+    <dimen name="s_padding">12dp</dimen>
+    <dimen name="m_padding">16dp</dimen>
+    <dimen name="l_padding">20dp</dimen>
+    <dimen name="xl_padding">24dp</dimen>
+    <dimen name="xxl_padding">32dp</dimen>
+    <dimen name="xxxl_padding">36dp</dimen>
+    <dimen name="divider_horizontal_size">16dp</dimen>
+    <dimen name="divider_vertical_size">32dp</dimen>
+</resources>
