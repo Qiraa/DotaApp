@@ -1,4 +1,4 @@
-package com.example.dotaapp
+package com.example.dotaapp.screens.components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -12,6 +12,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.dotaapp.R
 
 @Composable
 fun DotaReviewSection(

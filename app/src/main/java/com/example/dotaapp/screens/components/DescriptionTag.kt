@@ -1,4 +1,4 @@
-package com.example.dotaapp
+package com.example.dotaapp.screens.components
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.dotaapp.R
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)

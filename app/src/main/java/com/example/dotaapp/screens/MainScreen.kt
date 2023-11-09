@@ -1,4 +1,4 @@
-package com.example.dotaapp
+package com.example.dotaapp.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -17,6 +17,10 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.dotaapp.screens.components.DotaDetailsSection
+import com.example.dotaapp.screens.components.DotaReviewSection
+import com.example.dotaapp.screens.components.InstallButton
+import com.example.dotaapp.R
 
 @Composable
 fun MainScreen() {
