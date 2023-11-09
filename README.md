@@ -9,5 +9,5 @@ How to launch
 - Click 'OK' to open the the project in Android Studio.
 - A Gradle sync should start, but you can force a sync and build the 'app' module as needed.
 
-# Screenshots
 <img src="./screenshots/Sc1.png" width="400" alt="screenshot 1"/><img src="./screenshots/Sc2.png" width="400" alt="screenshot 2"/>
+<img src="./screenshots/ScLightTheme1.png" width="400" alt="screenshot light 1"/><img src="./screenshots/ScLightTheme2.png" width="400" alt="screenshot light 2"/>
